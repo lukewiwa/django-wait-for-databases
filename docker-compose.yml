@@ -9,6 +9,9 @@ services:
 
     environment:
       - RUFF_CACHE_DIR=/tmp/.ruff_cache
+      - POETRY_PYPI_TOKEN_PYPI=${POETRY_PYPI_TOKEN_PYPI}
+      - POETRY_HTTP_BASIC_PYPI_USERNAME=${POETRY_HTTP_BASIC_PYPI_USERNAME}
+      - POETRY_HTTP_BASIC_PYPI_PASSWORD=${POETRY_PYPI_TOKEN_PYPI}
 
     volumes:
       - .:/workspaces
