@@ -20,4 +20,12 @@ DATABASES = {
         "ENGINE": "django.db.backends.sqlite3",
         "NAME": "/tmp/db.sqlite3",
     },
+    "postgres": {
+        "ENGINE": "django.db.backends.postgresql",
+        "HOST": "postgres",
+        "PORT": "5432",
+        "NAME": "test",
+        "USER": "test",
+        "PASSWORD": "test",
+    },
 }
